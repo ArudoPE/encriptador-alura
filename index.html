@@ -10,18 +10,19 @@
 
 <body>
     <header class="header">
-        <nav>
-            <img src="" alt="">
+        <nav class="header__nav">
+            <img class="header__nav__logo" src="./assets/img/logo.png" alt="Alura Logo">
         </nav>
     </header>
     <main class="main">
         <div class="main__left__container">
             <div class="main__input__containter">
-                <textarea onclick="clearText();" id="input-area" name="input-area" rows="4"
-                    cols="50">Ingrese el texto aquí</textarea>
+                <textarea onclick="clearText();" autofocus id="input-area" name="input-area" rows="15"
+                    cols="35">Ingrese el texto aquí</textarea>
             </div>
             <div class="main__warning__container">
-                <p><span class="main__warning__image"></span>Solo letras minúsculas y sin acentos</p>
+                <span class="main__warning__image"></span>
+                <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="main__buttons__container">
                 <div class="main__button main__button__encriptar"><span>Encriptar</span></div>

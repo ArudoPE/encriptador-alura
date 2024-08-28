@@ -31,6 +31,7 @@
 
 body {
     font-family: "Inter", sans-serif;
+    background-color: var(--light-blue-100);
 }
 
 /*HEADER*/
@@ -38,10 +39,63 @@ body {
     width: 100%;
 }
 
+.header__nav {
+    display: flex;
+    padding-top: 20px;
+}
+
 /*MAIN*/
 .main {
     width: 100%;
     padding: 10% 15%;
+    display: flex;
+}
+
+/*MAIN__LEFT*/
+.main__left__container {
+    background-color: blanchedalmond;
+}
+
+.main__input__containter textarea {
+    border: none;
+    color: var(--dark-blue--300);
+    font-size: 32px;
+    font-weight: 400;
+    resize: none;
+    background-color: var(--light-blue-100);
+}
+
+.main__warning__container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main__warning__container .main__warning__image {
+    width: 16px;
+    height: 16px;
+    background-image: url("../assets/img/exclamation.png");
+    background-repeat: no-repeat;
+}
+
+.main__warning__container p {
+    color: var(--gray-400);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.main__buttons__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
+/*MAIN__RIGHT*/
+
+.main__right__container {
+    background-color: cadetblue;
 }
 
 /*FOOTER*/
