@@ -25,23 +25,23 @@
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="main__buttons__container">
-                <div class="main__button main__button__encriptar"><span>Encriptar</span></div>
-                <div class="main__button main__button__desencriptar"><span>Desencriptar</span></div>
+                <div onclick="encriptar();" class="main__button main__button__encriptar"><span>Encriptar</span></div>
+                <div onclick="desencriptar();" class="main__button main__button__desencriptar"><span>Desencriptar</span></div>
             </div>
         </div>
         <div class="main__right__container">
-            <div class="main__right__container__no__answer">
+            <div class="main__right__container__no__answer" id="main__right__container__no__answer">
                 <img src="./assets/img/muneco.png" alt="muneco">
                 <div class="main__right__container__no__answer__text">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <p>Ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
             </div>
-            <div class="main__right__container__yes__answer">
+            <div class="main__right__container__yes__answer" id="main__right__container__yes__answer">
                 <textarea id="answer-area" name="answer-area" rows="25"
                 cols="35"></textarea>
                 <div class="main__buttons__container">
-                    <div class="main__button main__button__copiar"><span>Copiar</span></div>
+                    <div onclick="copiar();" class="main__button main__button__copiar"><span>Copiar</span></div>
                 </div>
             </div>
         </div>
